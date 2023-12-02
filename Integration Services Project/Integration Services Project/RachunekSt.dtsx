@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="12/2/2023 12:18:21 AM"
@@ -12,7 +12,7 @@
   DTS:ObjectName="RachunekSt"
   DTS:PackageType="5"
   DTS:VersionBuild="6"
-  DTS:VersionGUID="{3D444693-2B64-479A-AC63-ABF56EA6CCA5}">
+  DTS:VersionGUID="{C9F70355-E152-43B1-BA30-8E5235FBA448}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

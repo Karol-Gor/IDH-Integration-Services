@@ -1,0 +1,71 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/2/2023 2:43:36 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-IVSSQLK"
+  DTS:CreatorName="DESKTOP-IVSSQLK\lolek"
+  DTS:DTSID="{D9872BB9-414C-4D7E-B549-EA9F423BE8AC}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{D5728EE3-B30A-4964-BA5A-0E753AC06E77}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql.s29318]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C565A21A-122F-4651-8380-585DD3621ACE}"
+      DTS:ObjectName="db-mssql.s29318">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=s29318;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{C565A21A-122F-4651-8380-585DD3621ACE}db-mssql.s29318;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C733A6D2-62DE-469C-847E-8348357E5425}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C565A21A-122F-4651-8380-585DD3621ACE}"
+          SQLTask:SqlStatementSource="ALTER TABLE Transakcje DROP CONSTRAINT fk_operacja;&#xA;ALTER TABLE Transakcje DROP CONSTRAINT fk_czas;&#xA;truncate table Rachunek;&#xA;truncate table Czas;&#xA;truncate table RodzajOperacji;&#xA;truncate table OddzialBanku;&#xA;truncate table Transakcje;&#xA;ALTER TABLE Transakcje&#xA;ADD CONSTRAINT fk_operacja&#xA;FOREIGN KEY(IdRodzajuOperacji) REFERENCES RodzajOperacji;&#xA;ALTER TABLE Transakcje&#xA;ADD CONSTRAINT fk_oddzial&#xA;FOREIGN KEY(IdOddzialuBanku) REFERENCES OddzialBanku;&#xA;ALTER TABLE Transakcje&#xA;ADD CONSTRAINT fk_konto&#xA;FOREIGN KEY(IdRachunku) REFERENCES Rachunek;&#xA;ALTER TABLE Transakcje&#xA;ADD CONSTRAINT fk_czas&#xA;FOREIGN KEY(IdCzasu) REFERENCES Czas;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="206.666655374898,83.1999994214376" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -2,18 +2,38 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Integration Services Project</Name>
-    <LastWriteTime>2023-12-01T23:50:51.6726324Z</LastWriteTime>
+    <LastWriteTime>2023-12-02T13:42:10.9121962Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>RachunekSt.dtsx</Name>
-      <LastWriteTime>2023-12-01T23:50:51.6606349Z</LastWriteTime>
+      <LastWriteTime>2023-12-02T12:27:08.5918612Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CzasSt.dtsx</Name>
-      <LastWriteTime>2023-12-01T23:52:23.650032Z</LastWriteTime>
+      <LastWriteTime>2023-12-02T12:27:08.5269284Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>RodzajOperacjiSt.dtsx</Name>
+      <LastWriteTime>2023-12-02T12:56:38.8760594Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>OddziałBankuSt.dtsx</Name>
+      <LastWriteTime>2023-12-02T13:12:29.3815143Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>TransakcjeSt.dtsx</Name>
+      <LastWriteTime>2023-12-02T13:18:12.2976413Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>ŁadowaniePoczatkoweHurtowni.dtsx</Name>
+      <LastWriteTime>2023-12-02T13:41:55.5784878Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

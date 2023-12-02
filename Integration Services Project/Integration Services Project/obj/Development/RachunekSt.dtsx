@@ -12,7 +12,7 @@
   DTS:ObjectName="RachunekSt"
   DTS:PackageType="5"
   DTS:VersionBuild="6"
-  DTS:VersionGUID="{3D444693-2B64-479A-AC63-ABF56EA6CCA5}">
+  DTS:VersionGUID="{C9F70355-E152-43B1-BA30-8E5235FBA448}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -94,7 +94,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -351,7 +351,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select r.IdRachunku, NumerRachunku, DataZalozenia, k.IdKlienta, Imie, Nazwisko, DataUrodzenia, Plec, m.IdMiasta, isnull(Dzielnica, 'Brak danych') Dzielnica, NazwaMiasta, NazwaWojewodztwa
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select r.IdRachunku, NumerRachunku, DataZalozenia, k.IdKlienta, Imie, Nazwisko, DataUrodzenia, Plec, m.IdMiasta, isnull(Dzielnica, 'Brak danych') Dzielnica, NazwaMiasta, NazwaWojewodztwa
 from Rachunki r inner join Uprawnienia u
 on r.IdRachunku = u.IdRachunku
 inner join Klienci k on k.IdKlienta = u.IdKlienta
